@@ -15,6 +15,7 @@ export default function Navbar() {
   // Lock body scroll while the mobile menu is open
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
+
     return () => {
       document.body.style.overflow = "";
     };
@@ -31,13 +32,14 @@ export default function Navbar() {
           className="flex shrink-0 items-center gap-1.5"
         >
           <Image
-            src="/gbim-logo.jpg"
+            src="/images/logo.svg"
             alt="GBIM"
             width={32}
             height={32}
             priority
             className="h-8 w-8 shrink-0 object-contain"
           />
+
           <span className="text-2xl font-bold tracking-tight text-[#071b2e]">
             GBIM
           </span>
@@ -81,7 +83,9 @@ export default function Navbar() {
 
         {/* Schedule a Call */}
         <div className="hidden lg:ml-auto lg:block">
-          <Button href="#contact">Schedule a call</Button>
+          <Button href="#contact">
+            Schedule a call
+          </Button>
         </div>
 
         {/* Mobile Toggle */}
@@ -172,8 +176,12 @@ export default function Navbar() {
             ))}
           </ul>
 
+          {/* Mobile Schedule a Call */}
           <div className="pt-4">
-            <Button href="#contact" className="w-full justify-center">
+            <Button
+              href="#contact"
+              className="w-full justify-center"
+            >
               Schedule a call
             </Button>
           </div>
