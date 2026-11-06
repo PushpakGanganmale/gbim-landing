@@ -6,7 +6,7 @@ import ClientsStrip from "./ClientsStrip";
 
 export default function HeroVisual() {
   return (
-    <div className="relative mx-auto w-full max-w-[760px] lg:mx-0 lg:h-[36.8rem] lg:w-[47rem] lg:max-w-none">
+    <div className="relative mx-auto w-full max-w-[760px] lg:mx-0 lg:h-[38rem] lg:w-[47rem] lg:max-w-none">
       {/* Video / testimonial card */}
       <div className="relative rounded-3xl bg-white/70 p-4 shadow-[0_10px_50px_rgba(183,42,37,0.08)] backdrop-blur lg:absolute lg:left-0 lg:top-[3.55rem] lg:w-[28.4rem]">
         <div className="relative">
