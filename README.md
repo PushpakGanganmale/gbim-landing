@@ -1,38 +1,124 @@
 # GBIM Landing Page
 
-Marketing landing page for GBIM, built with **Next.js** from the provided Figma design.
+A responsive marketing landing page for **GBIM**, built with Next.js and TypeScript based on the provided Figma design.
 
-- **Live preview:** `<add your Vercel URL here>`
-- **Repository:** https://github.com/PushpakGanganmale/gbim-landing
-- **Design reference:** [Figma](https://www.figma.com/proto/kOObYRphAyIxm1FEMy6dpw/GBIM-new?node-id=1971-10471&p=f&t=qubyVkDdqvuyrF2U-0&scaling=scale-down-width&content-scaling=fixed&page-id=1971%3A8553)
+## Live Preview
 
-## Tech stack
+**Live Website:** https://gbim-landing.vercel.app/
 
-- [Next.js](https://nextjs.org/) (App Router) and React
+**GitHub Repository:** https://github.com/PushpakGanganmale/gbim-landing
+
+**Design Reference:** [GBIM Figma Design](https://www.figma.com/proto/kOObYRphAyIxm1FEMy6dpw/GBIM-new?node-id=1971-10471&p=f&t=qubyVkDdqvuyrF2U-0&scaling=scale-down-width&content-scaling=fixed&page-id=1971%3A8553)
+
+## Tech Stack
+
+- Next.js (App Router)
+- React
 - TypeScript
 - Tailwind CSS v4
-- `next/image` for image optimization and `next/font` for self-hosted Google Fonts
-- No UI libraries; icons are inline SVG components
+- Next.js Image Optimization (`next/image`)
+- Next.js Font Optimization (`next/font`)
+- Inline SVG icons
 
-## Getting started
+## Features
+
+- Responsive navigation bar with desktop dropdown menus.
+- Mobile-friendly hamburger navigation.
+- Hero section with headline, description, and call-to-action buttons.
+- Testimonial video card.
+- Floating SEO statistics card.
+- Client logos section.
+- Reusable and modular React components.
+- Hover and focus interaction states.
+- Responsive layouts for different screen sizes.
+- Reduced-motion accessibility support.
+- Optimized images and self-hosted fonts.
+
+## Project Structure
+
+```text
+gbim-landing/
+├── public/
+│   └── images/
+│       ├── logo and brand assets
+│       ├── hero images
+│       └── client logos
+│
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   └── globals.css
+│   │
+│   ├── components/
+│   │   ├── layout/
+│   │   │   └── Navbar.tsx
+│   │   │
+│   │   ├── sections/
+│   │   │   └── hero/
+│   │   │       ├── Hero.tsx
+│   │   │       ├── HeroVisual.tsx
+│   │   │       ├── SeoStatsCard.tsx
+│   │   │       └── ClientsStrip.tsx
+│   │   │
+│   │   └── ui/
+│   │       ├── Button.tsx
+│   │       └── Icons.tsx
+│   │
+│   └── data/
+│       └── content.ts
+│
+├── package.json
+├── tsconfig.json
+└── README.md
+```
+
+## Getting Started
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) LTS (v18.18 or newer)
+- Node.js (18.18 or newer)
+- npm
 - Git
 
-### Run locally
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/PushpakGanganmale/gbim-landing.git
+```
+
+### 2. Navigate to the project
+
+```bash
 cd gbim-landing
+```
+
+### 3. Install dependencies
+
+```bash
 npm install
+```
+
+### 4. Start the development server
+
+```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). The first load needs internet to download the fonts.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Production build
+## Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Starts the development server |
+| `npm run build` | Creates an optimized production build |
+| `npm run start` | Starts the production server |
+| `npm run lint` | Runs ESLint checks |
+
+## Production Build
+
+To create and run a production build locally:
 
 ```bash
 npm run lint
@@ -40,68 +126,33 @@ npm run build
 npm run start
 ```
 
-## Scripts
+## Deployment
 
-| Command         | What it does                      |
-| --------------- | --------------------------------- |
-| `npm run dev`   | Start the dev server              |
-| `npm run build` | Create an optimized build         |
-| `npm run start` | Serve the production build        |
-| `npm run lint`  | Run ESLint                        |
+This project is deployed using [Vercel](https://vercel.com/).
 
-## Project structure
+To deploy your own version:
 
-```
-src/
-  app/
-    layout.tsx          # fonts, metadata, root layout
-    page.tsx            # composes the page sections
-    globals.css         # Tailwind import and design tokens
-  components/
-    layout/
-      Navbar.tsx        # responsive navbar with dropdowns and mobile menu
-    sections/
-      hero/
-        Hero.tsx            # headline, copy, call to action
-        HeroVisual.tsx      # testimonial video card and floating badges
-        SeoStatsCard.tsx    # SEO performance card
-        ClientsStrip.tsx    # client logos strip
-    ui/
-      Button.tsx        # reusable button (phone and arrow variants)
-      Icons.tsx         # inline SVG icons
-  data/
-    content.ts          # nav items, copy and stats, kept out of the JSX
-public/
-  images/               # logo, hero photo, client logos
-```
+1. Import the GitHub repository into Vercel.
+2. Select **Next.js** as the framework.
+3. Keep the default build settings.
+4. Click **Deploy**.
+5. Connect the GitHub repository for automatic deployments.
 
-Page copy and links live in `src/data/content.ts`, so text changes don't touch the components.
+New commits pushed to the `main` branch will trigger automatic deployments.
 
-## Implemented so far
+## Performance and Implementation
 
-- Responsive navbar: pill layout on desktop, hover dropdowns, hamburger menu on mobile
-- Hero section with headline, call-to-action button, testimonial card, SEO stats card and client logos strip
-- Hover and focus states on interactive elements, and reduced-motion support
+- Uses `next/image` for image optimization.
+- Uses `next/font` for font optimization.
+- Uses reusable React components for maintainability.
+- Uses inline SVG icons instead of an additional icon library.
+- Keeps page content and navigation data in `src/data/content.ts`.
+- Uses responsive styling and accessibility-conscious interaction states.
 
-## Performance notes
+## Acknowledgements
 
-- The hero image uses `next/image` with `priority` and a `sizes` hint
-- Fonts load through `next/font`, so there are no layout shifts or extra requests
-- Icons are inline SVG, which avoids an icon library
-- No third-party dependencies beyond the Next.js defaults
+- Design reference: GBIM Figma design.
+- Framework: [Next.js](https://nextjs.org/).
+- Deployment: [Vercel](https://vercel.com/).
 
-## Deployment (Vercel)
-
-1. Push the project to GitHub.
-2. Go to [vercel.com](https://vercel.com) and sign in with GitHub.
-3. Click **Add New**, then **Project**, and import the `gbim-landing` repository.
-4. Keep the default settings (Framework Preset: Next.js) and click **Deploy**.
-5. Every `git push` to `main` redeploys automatically.
-
-## Browser testing
-
-Checked at widths of 360, 768, 1024, 1440 and 1920px for horizontal scroll and layout breaks.
-
-## Notes
-
-AI assistance was used while building this project. The code was reviewed and tested manually.
+AI assistance was used during development. The implementation was reviewed and tested manually.
