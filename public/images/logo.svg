@@ -1,1 +1,8 @@
-<svg xmlns='http://www.w3.org/2000/svg' width='132' height='38' viewBox='0 0 132 38'><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='30' fill='#1c2b5a'>GBIM</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="132" height="38" viewBox="0 0 132 38" role="img" aria-label="GBIM">
+  <circle cx="19" cy="19" r="18" fill="#d6322d"/>
+  <rect x="9.5" y="10" width="19" height="17" rx="6" fill="#fff"/>
+  <path d="M15 9.5c0-2.3 1.6-3.6 4-3.6s4 1.300 4 3.600" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="15.800" cy="17.500" r="1.700" fill="#d6322d"/><circle cx="22.200" cy="17.500" r="1.700" fill="#d6322d"/>
+  <path d="M15.500 21.500q3.500 3 7 0" fill="none" stroke="#d6322d" stroke-width="1.800" stroke-linecap="round"/>
+  <text x="44" y="29" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="30" letter-spacing="-1" fill="#1b2a5e">GBIM</text>
+</svg>

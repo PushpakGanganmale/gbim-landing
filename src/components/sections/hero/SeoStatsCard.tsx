@@ -6,7 +6,7 @@ export default function SeoStatsCard() {
   const max = 150;
 
   return (
-    <div className="mt-6 w-full rounded-2xl bg-white p-3.5 shadow-[0_10px_40px_rgba(0,0,0,0.08)] sm:max-w-[300px] lg:absolute lg:right-9 lg:top-0 lg:mt-0 lg:w-[290px]">
+    <div className="mt-6 w-full rounded-2xl bg-white p-3.5 shadow-[0_10px_40px_rgba(0,0,0,0.08)] sm:max-w-[300px] lg:absolute lg:right-6 lg:top-0 lg:mt-0 lg:w-[290px]">
       <div className="flex items-start justify-between gap-2">
         <div>
           <p className="text-[9px] tracking-wide text-muted">{title}</p>

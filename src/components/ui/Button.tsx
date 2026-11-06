@@ -23,7 +23,7 @@ export default function Button({ href, children, variant = "phone", className = 
     );
   }
   return (
-    <Link href={href} className={`${base} gap-3 px-6 py-3.5 text-lg font-medium lg:px-7 lg:py-4 lg:text-xl ${className}`}>
+    <Link href={href} className={`${base} gap-3 px-6 py-3.5 text-lg font-medium lg:px-7 lg:py-[17px] lg:text-[22px] ${className}`}>
       <PhoneIcon className="h-5 w-5" />
       {children}
     </Link>

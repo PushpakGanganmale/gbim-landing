@@ -1,1 +1,7 @@
-<svg xmlns='http://www.w3.org/2000/svg' width='100' height='46' viewBox='0 0 100 46'><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='12' fill='#7a4a9a'>FAMILY DENTIST</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="46" viewBox="0 0 100 46" role="img" aria-label="SA Family Dentist">
+  <path d="M10 8c8-6 18-2 18 6 0 6-6 8-10 10s-6 5-2 9c3 3 8 3 11 0" fill="none" stroke="#7b4aa0" stroke-width="3.500" stroke-linecap="round"/>
+  <path d="M8 22c0-8 8-10 14-6" fill="none" stroke="#b38ad0" stroke-width="2" stroke-linecap="round"/>
+  <text x="46" y="20" font-family="Arial, sans-serif" font-size="11" fill="#8a5cae" letter-spacing=".5">FAMILY</text>
+  <text x="46" y="33" font-family="Arial, sans-serif" font-size="11" fill="#8a5cae" letter-spacing=".5">DENTIST</text>
+  <path d="M46 36h46" stroke="#b38ad0" stroke-width=".8"/>
+</svg>

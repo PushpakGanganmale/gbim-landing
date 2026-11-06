@@ -20,8 +20,8 @@ export default function Navbar() {
   }, [open]);
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50 px-3 pt-4 sm:px-6 lg:pt-[52px]">
-      <div className="mx-auto flex max-w-[1720px] items-center justify-between rounded-full bg-white px-5 py-3 shadow-[0_8px_40px_rgba(0,0,0,0.06)] lg:px-12 lg:py-5">
+    <header className="absolute inset-x-0 top-0 z-50 px-3 pt-4 sm:px-6 lg:px-[5.2vw] lg:pt-[52px]">
+      <div className="mx-auto flex max-w-[1720px] items-center justify-between rounded-full bg-white px-5 py-3 shadow-[0_8px_40px_rgba(0,0,0,0.06)] lg:px-12 lg:py-6">
         <Link href="/" aria-label="GBIM home" className="shrink-0">
           <Image src="/images/logo.svg" alt="GBIM" width={132} height={38} priority />
         </Link>

@@ -1,1 +1,6 @@
-<svg xmlns='http://www.w3.org/2000/svg' width='84' height='36' viewBox='0 0 84 36'><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='14' fill='#2a8a3a'>Sundaram</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="84" height="36" viewBox="0 0 84 36" role="img" aria-label="Sundaram Books for Success">
+  <ellipse cx="42" cy="14" rx="40" ry="12" fill="#3a9a45"/>
+  <ellipse cx="42" cy="14" rx="37" ry="9.500" fill="none" stroke="#fff" stroke-width="1"/>
+  <text x="42" y="19" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-weight="700" font-size="12" fill="#fff">Sundaram</text>
+  <text x="42" y="33" text-anchor="middle" font-family="Arial, sans-serif" font-size="6" fill="#3a9a45">Books for Success...</text>
+</svg>
