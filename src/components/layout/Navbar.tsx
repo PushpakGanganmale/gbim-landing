@@ -20,23 +20,23 @@ export default function Navbar() {
   }, [open]);
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50 px-3 pt-4 sm:px-6 lg:px-[5.2vw] lg:pt-[52px]">
-      <div className="mx-auto flex max-w-[1720px] items-center justify-between rounded-full bg-white px-5 py-3 shadow-[0_8px_40px_rgba(0,0,0,0.06)] lg:px-12 lg:py-6">
+    <header className="absolute inset-x-0 top-0 z-50 px-3 pt-4 sm:px-6 lg:px-[6.25rem] lg:pt-[3.25rem]">
+      <div className="mx-auto flex max-w-[107.5rem] items-center justify-between rounded-full bg-white px-5 py-3 shadow-[0_8px_40px_rgba(0,0,0,0.06)] lg:pl-12 lg:pr-6 lg:py-6">
         <Link href="/" aria-label="GBIM home" className="shrink-0">
-          <Image src="/images/logo.svg" alt="GBIM" width={132} height={38} priority />
+          <Image src="/images/logo.svg" alt="GBIM" width={132} height={38} priority className="h-auto lg:w-[8.125rem]" />
         </Link>
 
         {/* Desktop nav */}
-        <nav aria-label="Primary" className="hidden items-center gap-6 xl:gap-9 lg:flex">
+        <nav aria-label="Primary" className="hidden items-center gap-9 whitespace-nowrap lg:ml-[11.9rem] lg:flex">
           {navItems.map((item) => (
             <div key={item.label} className="group relative">
               <Link
                 href={item.href}
-                className="flex items-center gap-2 py-3 text-base text-ink transition-colors hover:text-brand xl:text-xl"
+                className="flex items-center gap-4 py-3 text-base text-ink transition-colors hover:text-brand lg:text-[1.375rem] lg:leading-none"
               >
                 {item.label}
                 {item.children && (
-                  <ChevronDown className="h-5 w-5 transition-transform group-hover:rotate-180 group-focus-within:rotate-180" />
+                  <ChevronDown className="h-5 w-5 lg:h-[1.1rem] lg:w-[1.1rem] transition-transform group-hover:rotate-180 group-focus-within:rotate-180" />
                 )}
               </Link>
               {item.children && (
@@ -54,7 +54,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden lg:ml-auto lg:block">
           <Button href="#contact">Schedule a call</Button>
         </div>
 

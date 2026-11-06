@@ -3,7 +3,7 @@ import { clients } from "@/data/content";
 
 export default function ClientsStrip() {
   return (
-    <div className="mt-6 flex flex-wrap items-center gap-x-8 gap-y-4 rounded-[2rem] bg-white px-6 py-5 shadow-[0_10px_40px_rgba(0,0,0,0.07)] lg:absolute lg:bottom-0 lg:left-[14%] lg:right-0 lg:mt-0 lg:flex-nowrap lg:justify-between lg:gap-x-5 lg:px-8">
+    <div className="mt-6 flex flex-wrap items-center gap-x-8 gap-y-4 rounded-[2rem] bg-white px-6 py-5 shadow-[0_10px_40px_rgba(0,0,0,0.07)] lg:absolute lg:bottom-0 lg:left-[6.4rem] lg:right-[1.2rem] lg:mt-0 lg:flex-nowrap lg:justify-between lg:gap-x-5 lg:px-8">
       <div className="shrink-0 leading-tight">
         <p className="flex items-baseline gap-1.5">
           <span className="text-[26px] font-semibold text-brand">400+</span>
