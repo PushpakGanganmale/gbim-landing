@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+GBIM Landing Page
 
-## Getting Started
+Marketing landing page for GBIM, built with Next.js from the provided Figma design.
 
-First, run the development server:
-
-```bash
+Live preview: <add your Vercel URL here>
+Repository: https://github.com/PushpakGanganmale/gbim-landing
+Design reference: Figma
+Tech stack
+Next.js (App Router) and React
+TypeScript
+Tailwind CSS v4
+next/image for image optimization and next/font for self-hosted Google Fonts
+No UI libraries; icons are inline SVG components
+Getting started
+Prerequisites
+Node.js LTS (v18.18 or newer)
+Git
+Run locally
+bash
+git clone https://github.com/PushpakGanganmale/gbim-landing.git
+cd gbim-landing
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000. The first load needs internet to download the fonts.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Production build
+bash
+npm run lint
+npm run build
+npm run start
+Scripts
+Command	What it does
+npm run dev	Start the dev server
+npm run build	Create an optimized build
+npm run start	Serve the production build
+npm run lint	Run ESLint
+Project structure
+src/
+  app/
+    layout.tsx          # fonts, metadata, root layout
+    page.tsx            # composes the page sections
+    globals.css         # Tailwind import and design tokens
+  components/
+    layout/
+      Navbar.tsx        # responsive navbar with dropdowns and mobile menu
+    sections/
+      hero/
+        Hero.tsx            # headline, copy, call to action
+        HeroVisual.tsx      # testimonial video card and floating badges
+        SeoStatsCard.tsx    # SEO performance card
+        ClientsStrip.tsx    # client logos strip
+    ui/
+      Button.tsx        # reusable button (phone and arrow variants)
+      Icons.tsx         # inline SVG icons
+  data/
+    content.ts          # nav items, copy and stats, kept out of the JSX
+public/
+  images/               # logo, hero photo, client logos
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Page copy and links live in src/data/content.ts, so text changes don't touch the components.
 
-## Learn More
+Implemented so far
+Responsive navbar: pill layout on desktop, hover dropdowns, hamburger menu on mobile
+Hero section with headline, call-to-action button, testimonial card, SEO stats card and client logos strip
+Hover and focus states on interactive elements, and reduced-motion support
+Performance notes
+The hero image uses next/image with priority and a sizes hint
+Fonts load through next/font, so there are no layout shifts or extra requests
+Icons are inline SVG, which avoids an icon library
+No third-party dependencies beyond the Next.js defaults
+Deployment (Vercel)
+Push the project to GitHub.
+Go to vercel.com and sign in with GitHub.
+Click Add New, then Project, and import the gbim-landing repository.
+Keep the default settings (Framework Preset: Next.js) and click Deploy.
+Every git push to main redeploys automatically.
+Browser testing
 
-To learn more about Next.js, take a look at the following resources:
+Checked at widths of 360, 768, 1024, 1440 and 1920px for horizontal scroll and layout breaks.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+AI assistance was used while building this project. The code was reviewed and tested manually.
