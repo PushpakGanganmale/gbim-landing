@@ -12,7 +12,6 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [expanded, setExpanded] = useState<string | null>(null);
 
-  // Lock body scroll while the mobile menu is open
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
 
@@ -25,7 +24,7 @@ export default function Navbar() {
     <header className="absolute inset-x-0 top-0 z-50 px-3 pt-4 sm:px-6 lg:px-[6.25rem] lg:pt-[3.25rem]">
       <div className="mx-auto flex max-w-[107.5rem] items-center justify-between rounded-full bg-white px-5 py-3 shadow-[0_8px_40px_rgba(0,0,0,0.06)] lg:pl-12 lg:pr-6 lg:py-6">
 
-        {/* Logo */}
+       
         <Link
           href="/"
           aria-label="GBIM home"
@@ -45,7 +44,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Desktop Navigation */}
+       
         <nav
           aria-label="Primary"
           className="hidden items-center gap-9 whitespace-nowrap lg:ml-[11.9rem] lg:flex"
@@ -81,14 +80,13 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Schedule a Call */}
+        
         <div className="hidden lg:ml-auto lg:block">
           <Button href="#contact">
             Schedule a call
           </Button>
         </div>
 
-        {/* Mobile Toggle */}
         <button
           type="button"
           aria-label={open ? "Close menu" : "Open menu"}
@@ -114,7 +112,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+    
       {open && (
         <div
           id="mobile-menu"
@@ -176,7 +174,7 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* Mobile Schedule a Call */}
+         
           <div className="pt-4">
             <Button
               href="#contact"

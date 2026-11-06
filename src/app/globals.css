@@ -14,8 +14,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Desktop: 1rem = 16px at the 1917px Figma frame, scaling with the viewport so the
-   layout is a uniform copy of the design at any laptop/desktop width. */
+
 @media (min-width: 1024px) {
   html { font-size: clamp(9px, 0.8346vw, 16px); }
 }

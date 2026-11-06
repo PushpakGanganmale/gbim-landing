@@ -7,7 +7,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        {/* Next sections go here, one component per Figma section */}
+      
       </main>
     </>
   );
