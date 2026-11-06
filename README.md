@@ -1,24 +1,22 @@
 # GBIM Landing Page
 
-A responsive marketing landing page for **GBIM**, built with Next.js and TypeScript based on the provided Figma design.
+A responsive marketing landing page developed as part of the **GBIM Frontend Development Assignment**, using Next.js and TypeScript based on the provided Figma design.
 
 ## Live Preview
 
-**Live Website:** https://gbim-landing.vercel.app/
-
-**GitHub Repository:** https://github.com/PushpakGanganmale/gbim-landing
-
-**Design Reference:** [GBIM Figma Design](https://www.figma.com/proto/kOObYRphAyIxm1FEMy6dpw/GBIM-new?node-id=1971-10471&p=f&t=qubyVkDdqvuyrF2U-0&scaling=scale-down-width&content-scaling=fixed&page-id=1971%3A8553)
+- **Live Website:** https://gbim-landing.vercel.app/
+- **GitHub Repository:** https://github.com/PushpakGanganmale/gbim-landing
+- **Figma Design Reference:** [View GBIM Landing Page Design](https://www.figma.com/proto/kOObYRphAyIxm1FEMy6dpw/GBIM-new?node-id=1971-10471&p=f&t=qubyVkDdqvuyrF2U-0&scaling=scale-down-width&content-scaling=fixed&page-id=1971%3A8553)
 
 ## Tech Stack
 
-- Next.js (App Router)
-- React
-- TypeScript
-- Tailwind CSS v4
-- Next.js Image Optimization (`next/image`)
-- Next.js Font Optimization (`next/font`)
-- Inline SVG icons
+- **Framework:** Next.js (App Router)
+- **Frontend:** React
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS v4
+- **Image Optimization:** Next.js `next/image`
+- **Font Optimization:** Next.js `next/font`
+- **Icons:** Inline SVG components
 
 ## Features
 
@@ -40,7 +38,7 @@ A responsive marketing landing page for **GBIM**, built with Next.js and TypeScr
 gbim-landing/
 ├── public/
 │   └── images/
-│       ├── logo and brand assets
+│       ├── brand assets
 │       ├── hero images
 │       └── client logos
 │
@@ -77,7 +75,7 @@ gbim-landing/
 
 ### Prerequisites
 
-- Node.js (18.18 or newer)
+- Node.js 20.9 or newer
 - npm
 - Git
 
@@ -87,7 +85,7 @@ gbim-landing/
 git clone https://github.com/PushpakGanganmale/gbim-landing.git
 ```
 
-### 2. Navigate to the project
+### 2. Navigate to the project directory
 
 ```bash
 cd gbim-landing
@@ -126,33 +124,49 @@ npm run build
 npm run start
 ```
 
+## Performance and Code Quality
+
+- Uses Next.js Image Optimization for efficient image delivery.
+- Uses `next/font` for font loading and reduced layout shifts.
+- Follows a reusable, component-based React architecture.
+- Uses inline SVG icons without an additional icon library.
+- Separates page content and navigation data into `src/data/content.ts`.
+- Uses responsive styling and accessibility-conscious interaction states.
+- Avoids unnecessary third-party UI dependencies.
+
 ## Deployment
 
-This project is deployed using [Vercel](https://vercel.com/).
+The project is deployed using [Vercel](https://vercel.com/).
 
 To deploy your own version:
 
-1. Import the GitHub repository into Vercel.
-2. Select **Next.js** as the framework.
-3. Keep the default build settings.
-4. Click **Deploy**.
-5. Connect the GitHub repository for automatic deployments.
+1. Sign in to Vercel using your GitHub account.
+2. Import the `gbim-landing` repository.
+3. Select Next.js as the framework.
+4. Keep the default build settings.
+5. Click **Deploy**.
 
-New commits pushed to the `main` branch will trigger automatic deployments.
+Once GitHub integration is configured, new commits pushed to the `main` branch automatically trigger deployments.
 
-## Performance and Implementation
+## Assignment Details
 
-- Uses `next/image` for image optimization.
-- Uses `next/font` for font optimization.
-- Uses reusable React components for maintainability.
-- Uses inline SVG icons instead of an additional icon library.
-- Keeps page content and navigation data in `src/data/content.ts`.
-- Uses responsive styling and accessibility-conscious interaction states.
+**Assignment:** Frontend Development – Marketing Landing Page
+
+**Organization:** GBIM
+
+**Objective:** Develop a responsive marketing landing page using Next.js that closely follows the provided Figma design.
+
+**Evaluation Focus:**
+- Design accuracy
+- Responsive behavior
+- Code quality and component structure
+- Performance and optimization
+- Functionality and user interactions
 
 ## Acknowledgements
 
 - Design reference: GBIM Figma design.
 - Framework: [Next.js](https://nextjs.org/).
-- Deployment: [Vercel](https://vercel.com/).
+- Deployment platform: [Vercel](https://vercel.com/).
 
 AI assistance was used during development. The implementation was reviewed and tested manually.
